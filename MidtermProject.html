@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MidtermStylescss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <!-- I know there is supposted to be an <hr> here and it goes virtically up but I cant seem to get it to work -->
+        <a href="https://github.com/MackMusial"><img src="ScreenShots/github.png" alt="" class="media-images"></a>
+        <a href="https://www.kohls.com/catalog/basketball-balls-sporting-goods-sports-fitness.jsp?CN=Activity:Basketball+Product:Balls+Category:Sporting%20Goods+Department:Sports%20%26%20Fitness&kwid=p56246699555&utm_source=bing&utm_medium=cpc&utm_term=sports&utm_campaign=DSA_Fitness+%26+Sporting+Goods_Search_Bing_Generic&UTM_Adgroupid=58700006229001177&pfx=pfx_bing_roi&cid=genericsearch&&msclkid=911a6c72e6dc162e1add0b72c10a789d&gclid=911a6c72e6dc162e1add0b72c10a789d&gclsrc=3p.ds"><img src="ScreenShots/basketball.png" alt="image of a basketball" class="media-images"></a>
+        <a href="https://getbootstrap.com/" target="_blank"><img src="ScreenShots/bootstrap.png" alt="Boostrap image" class="media-images"></a>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <!-- i got the span idea from ChatGPT it allows me to keep the # next to the words in the list without seperating them -->
+                <li><span class="hash">#</span>home</li>
+                <!-- It is using a table to create my nav bar -->
+                <li><span class="hash">#</span>works</li>
+                <!-- Each nav bar has a li which helps seperate eachother and the span just allows me to get the # next to the words and allow me to make the # purple -->
+                <li><span class="hash">#</span>about-me</li>
+                <li><span class="hash">#</span>contacts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- chat gpt did give me a little bit of this <section> but i did make a few modificaitons. The "message me here" was not correct. SO i had to change a few of the classes and remove a few. I had to add a div around the span email logo and the email -->
+        <section id="contact">
+            <h1><span class="hash">/</span>contacts</h1>
+            <div class="contact-content">
+                <article class="contact-info">
+                    <p class="contact-info-title">Who am I?</p>
+                    <p>I'm interested in freelance opportunities. However, if you have other requests or questions,
+                        don't hesitate to contact me.</p>
+                </article>
+                <div class="message-box">
+                    <p>Message me here</p>
+                    <div><span>✉️</span> elias@elias-dev.ml</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="all-media">
+            <h1><span class="hash">#</span>all-media</h1>
+            <a href="https://x.com/" target="_blank"><img src="ScreenShots/twitter.png" alt="Boostrap image" class="media-images"></a><span id="twitterlogo">@Elias</span>
+        </div>
+    </main>
+    
+    <footer> <hr>
+        <section id="footer-box">
+            <div class="footer">
+                <p><span id="footer-Elias">Elias</span> <a href="">Elias@Elias-dev.ml</a></p>
+                <p>Web deisgner and front-end developer</p>
+            </div>
+        
+            <div class="media">
+                <h3>Media</h3>
+                <a href="https://discord.gg/Zx7KVhq2WA"><img src="ScreenShots/Discord-Logo-PNG-Photo.png" alt="Discord image" class="media-images"></a>
+                <a href="https://github.com/MackMusial" target="_blank"><img src="ScreenShots/github.png"  alt="Github image" class="media-images"></a>
+                <a href="https://getbootstrap.com/" target="_blank"><img src="ScreenShots/bootstrap.png" alt="Boostrap image" class="media-images" ></a>
+            </div>
+        </section>
+    </footer>
+
+
+   
+    <!-- the copyright &copy was given by chatGPT -->
+    <div id="copyright">
+        <p>&copy; Copyright 2023. Made by Mack</p>
+    </div>
+
+</body>
+
+</html>

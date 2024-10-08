@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* this is the body tag, i am just setting the font of the text, the background color of the body and the color of the text in the body */
+:root {
+    font-size: 18px;
+}
+/* I got the Body from ChatGPT it was just making sure the margin and padding of the body is set to 0 and its also setting the color of the text and the background color and the font */
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #ccc;
+    border-left: 1px solid white;
+    height: 180px;
+    margin-left: 30px;
+}
+
+/* chatGPT made the sidebar. The only modifications i made was i removed the height element  */
+.sidebar {
+    display: flex;
+    width: 140px;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: fixed;
+    left: 0;
+    
+}
+
+/* this helps me seperate the "Who am I" and the "Message me here" */
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+}
+/* this is just setting the color and font size of the a tags in the sidebar */
+.sidebar a {
+    color: #888;
+    font-size: 24px;
+}
+/* this is changing the color of the #'s and the /'s */
+.hash {
+    color: #b17ff3;
+}
+/* this is just changing the color of the a tags so that they are not purple. it is making them a different gray */
+a {
+    color: #888
+}
+
+/* ChatGPT made the Header I changed the Text align because it had it as left and i changed the padding a little */
+header {
+    text-align: right;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+/* this is giving the media tags some margin to the left because of the sidebar. without this part of the all-media would be cut off by the sidebar because it is set to fixed so it doesnt move around  */
+.all-media {
+    margin-left: 160px;
+    margin-top: 60px;
+    font-size: var(font-size);
+}
+
+/* ChatGPT also helped me make the NavBar I did not make any changes to the CSS of the Navbar besides the color of the hashes */
+nav ul li a {
+    color: #b17ff3;
+}
+/* this is again keeping the text aligned to the left and also giving some margin to the top and the 160px to the left for the sidebar */
+#contact {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+/* this is the message box that says message me here and then with the email. it is type flex becase it is helping seperate the message me here and the who am i. there is a little padding for the border so it isnt right ontop of the text*/
+.message-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30%;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 250px;
+    /* chatgpt also helped me come up with the nowrap so my text does no go to the next line */
+    white-space: nowrap;
+}
+
+
+
+.message-box p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #ccc;
+}
+
+#all-media {
+    text-align: left;
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+/* I got the top-4 and the position relative from chatGPT. it alled me to move the @Elias up a little bit because it was not aligned with the twitter icon */
+#twitterlogo{
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+}
+/* this is the box that surrounds the Email block and the media bar with our responsive and clickable links */
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+/* this controls the contact email at the footer */
+#footer-Elias {
+    color: white;
+    font-size: 130%;
+}
+/* this controls the media box that is in the footer and on the right side of the screen this helps with seperating the two divs to opposite sides of the screen and also keeping them on the same horizontal plain. */
+.media {
+    flex-direction: row;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    margin-right: 10%;
+/* this just adjusts the size of the images that are beneath media  */
+}
+.media-images {
+    width: 20px;
+    height: auto;
+}
+/* this is basically just setting the margins, paddings, and background color of the footer. without the background color it would revert to white */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    margin-left: 160px;
+}
+/* this just centers my copyright at the bottom of the page  */
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+/* setting the font size of the p tags that are in the footer. it is also setting the color of the text of the p tags  */
+footer p {
+    font-size: 12px;
+    color: #888;
+}
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .all-media {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #contact {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .message-box {
+        margin-left: 0;
+        width: auto;
+    }
+
+    footer {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-images {
+        width: 30px;
+    }
+
+    .media {
+        margin-right: 0;
+    }
+}

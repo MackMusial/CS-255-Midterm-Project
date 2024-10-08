@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* the sidebar is basically just setting the images that are clickable that will take you to other web pages
+the background color is keeping the sidebar the same color as the body. I am using display flex because i used flex diretion to make the images 
+change to virtical and no longer horizontal.
+and I am using position absolute because if I dont use that the images want to wander of to another side of the screen.  */
+.sidebar {
+    display: flex;
+    width: 140px;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: absolute;
+    left: 0;
+}
+/* Body was written by chatGPT */
+body {
+    margin-left: 160px;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #ccc;
+    border-left: 1px solid white;
+    height: 180px;
+}
+/* setting the background color of the header and adding padding and aligning the text to the right */
+header {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    text-align: right;
+}
+.hash {
+    color: #b17ff3;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#about-me, #skills, #fun-facts {
+    padding: 50px 20px;
+    text-align: left;
+}
+/* ChatGPT helped me with the align items center. I was trying to lower the text because the image was slightly slower than the text */
+#flex-right{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+/* the about me, h1, skills, h2, funfacts h2 were all written by ChatGPT. it is just applying the text color, margin and text align left to the ID's listed */
+#about-me h1, #skills h2, #fun-facts h2 {
+    color: #ccc;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#about-me p {
+    max-width: 600px;
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* this is resizing the image that is to the right of the main body of text */
+.blackhoodieguy{
+    width: 400px;
+    height: auto;
+}
+/* This was originally writeen by chatGPT but I made many changes too it. I changed the border so that it was a solid white line. I set the box-sizing to hopefully stop the padding from effecting the border. 
+I se the width of the boxes so they are all the same size. and i alligned the text to the left */
+.category {
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* this is a seperate category class that is looking directly at the header of the boxes. ex(Languages, other, tools, datebases, frameworks) That is what its looking at direcly. ChatGPT origonally wrote this  */
+.category h3 {
+    border-bottom: 1px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ccc;
+    margin: 0;
+    width: 100%;
+}
+/* using inline block allows the p tags to change their position and also allow them to change lines depending on the size of the screen  */
+.category p {
+    display: inline-block;
+    padding-left: 10px;;
+    margin: 0;
+    padding-top: 5px;
+}
+.fun-facts{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+}
+/* changing the text color of the a tags*/
+a {
+    color: #888;
+}
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+/* this controls the contact email at the footer */
+#footer-Elias {
+    color: white;
+    font-size: 130%;
+}
+/* this controls the media box that is in the footer and on the right side of the screen this helps with seperating the two divs to opposite sides of the screen and also keeping them on the same horizontal plain. */
+.media {
+    flex-direction: row;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    margin-right: 10%;
+/* this just adjusts the size of the images that are beneath media  */
+}
+.media-images {
+    width: 20px;
+    height: auto;
+}
+/* this is basically just setting the margins, paddings, and background color of the footer. without the background color it would revert to white */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+}
+/* this just centers my copyright at the bottom of the page  */
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+/* setting the font size of the child elements <p> in the parent element <footer>. it is also setting the color of the text of the p tags  */
+footer p {
+    font-size: 12px;
+    color: #888;
+}
+/* chatGPT helped me make the media Query */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        position: relative;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #flex-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blackhoodieguy {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-images {
+        width: 30px;
+    }
+}
