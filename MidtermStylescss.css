@@ -8,6 +8,18 @@
     font-size: 18px;
 }
 /* I got the Body from ChatGPT it was just making sure the margin and padding of the body is set to 0 and its also setting the color of the text and the background color and the font */
+.sidebar {
+    display: flex;
+    width: 140px;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: fixed;
+    left: 0;
+    
+}
 body {
     
     margin: 0;
@@ -21,18 +33,7 @@ body {
 }
 
 /* chatGPT made the sidebar. The only modifications i made was i removed the height element  */
-.sidebar {
-    display: flex;
-    width: 140px;
-    background-color: #1e1e1e;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 20px;
-    margin-top: 200px;
-    position: fixed;
-    left: 0;
-    
-}
+
 
 /* this helps me seperate the "Who am I" and the "Message me here" */
 .contact-content {
